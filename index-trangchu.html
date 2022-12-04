@@ -34,13 +34,13 @@
             <h3><a href="">Thông Tin</a></h3>
           </div>
           <div class="box-tabs3">
-            <h3><a href="./index-tranghotro.html">Giỏ Hàng</a></h3>
+            <h3><a href="./cart.html">Giỏ Hàng</a></h3>
             
           </div>
         </div>
         <div class="logo-page-tab2">
           <div class="header">
-            <!-- <i id="logout" onclick="boollogout()" class="fa-solid fa-user"></i> -->
+             <!-- <i id="logout" onclick="boollogout()" class="fa-solid fa-user"></i> -->
             <i class="fa-solid fa-user"></i>
             <span class="user" id="user"></span>
           </div>
@@ -57,10 +57,9 @@
             type="text"
             placeholder="tìm kiếm sản phẩm"
             id="search"
-            oninput="search()"
           />
-          <div class="ip-icon">
-            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+          <button class="ip-icon" onclick="search()"><i class="fa-solid fa-magnifying-glass"></i></button>
+          
           <!-- </div>
           <div class="ip-icon"><i class="fa-solid fa-cart-shopping"></i></div>
         </div> -->
@@ -80,27 +79,12 @@
 </div>  
     
     <div class="show-card" id="showCart">
-      <div class="item1">
-        <div class="card-imge">
-          <img src="${data[i].image}" alt="hình ảnh" />
-        </div>
-        <div>
-          <h3>${data[i].title}</h3>
-        </div>
-        <div class="card-display">
-          <div class="card-icon"><i class="fa-regular fa-heart"></i></div>
-          <div class="card-price">${data[i].price}</div>
-        </div>
-        <div class="card-onclick">
-          <div class="click-box1">Thêm vào giỏ hàng</div>
-          <div class="click-box2">Xem chi tiết</div>
-        </div>
-      </div>
     </div>
     <div class="footer">
       <div class="background-footer">
         <div class="card-footer1">
           <div>
+            
             <h2>Thông tin về chúng tôi</h2>
           </div>
           <div class="crd">
